@@ -18,3 +18,7 @@
   UefiLib
   UefiBootServicesTableLib
   UefiRuntimeServicesTableLib
+  BaseLib
+  BaseMemoryLib
+  PrintLib
+  DebugLib
