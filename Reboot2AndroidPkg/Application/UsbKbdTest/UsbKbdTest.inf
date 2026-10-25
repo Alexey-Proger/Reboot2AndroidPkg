@@ -1,0 +1,29 @@
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = UsbKbdTest
+  FILE_GUID                      = 3f6c8d21-7b94-4e1a-a5d0-9c2e4b7f1a68
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = UefiMain
+
+[Sources]
+  UsbKbdTest.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  Reboot2AndroidPkg/Reboot2AndroidPkg.dec
+
+[LibraryClasses]
+  UefiApplicationEntryPoint
+  UefiLib
+  UefiBootServicesTableLib
+  BaseLib
+  BaseMemoryLib
+  CompilerIntrinsicsLib
+  PrintLib
+  DebugLib
+  MemoryAllocationLib
+
+[Protocols]
+  gEfiUsbIoProtocolGuid
+  gEfiSimpleTextInputExProtocolGuid

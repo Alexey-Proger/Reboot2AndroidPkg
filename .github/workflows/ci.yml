@@ -39,6 +39,12 @@ jobs:
         with:
           name: PStoreProbe
           path: edk2/Build/Reboot2AndroidPkg/RELEASE_GCC5/AARCH64/Reboot2AndroidPkg/Application/PStoreProbe/PStoreProbe/OUTPUT/PStoreProbe.efi
+
+      - name: Upload UsbKbdTest artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: UsbKbdTest
+          path: edk2/Build/Reboot2AndroidPkg/RELEASE_GCC5/AARCH64/Reboot2AndroidPkg/Application/UsbKbdTest/UsbKbdTest/OUTPUT/UsbKbdTest.efi
       
       - name: Create Release
         if: github.ref == 'refs/heads/main'
