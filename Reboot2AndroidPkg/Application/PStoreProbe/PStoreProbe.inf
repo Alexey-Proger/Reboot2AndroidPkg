@@ -20,5 +20,6 @@
   UefiRuntimeServicesTableLib
   BaseLib
   BaseMemoryLib
+  CompilerIntrinsicsLib
   PrintLib
   DebugLib
