@@ -18,3 +18,4 @@
   UefiLib
   UefiBootServicesTableLib
   UefiRuntimeServicesTableLib
+  DxeServicesTableLib
