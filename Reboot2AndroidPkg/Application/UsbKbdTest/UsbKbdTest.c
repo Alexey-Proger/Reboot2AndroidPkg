@@ -78,7 +78,7 @@ EnumerateUsbDevices (
       continue;
     }
 
-    Status = UsbIo->Usb.GetDeviceDescriptor (UsbIo, &DevDesc);
+    Status = UsbIo->UsbGetDeviceDescriptor (UsbIo, &DevDesc);
     if (EFI_ERROR (Status)) {
       Print (L"  [%d] GetDeviceDescriptor failed: %r\n", Index, Status);
       continue;
