@@ -45,6 +45,12 @@ jobs:
         with:
           name: UsbKbdTest
           path: edk2/Build/Reboot2AndroidPkg/RELEASE_GCC5/AARCH64/Reboot2AndroidPkg/Application/UsbKbdTest/UsbKbdTest/OUTPUT/UsbKbdTest.efi
+
+      - name: Upload UsbRoleCfg artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: UsbRoleCfg
+          path: edk2/Build/Reboot2AndroidPkg/RELEASE_GCC5/AARCH64/Reboot2AndroidPkg/Application/UsbRoleCfg/UsbRoleCfg/OUTPUT/UsbRoleCfg.efi
       
       - name: Create Release
         if: github.ref == 'refs/heads/main'

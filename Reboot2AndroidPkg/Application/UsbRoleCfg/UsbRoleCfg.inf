@@ -1,0 +1,25 @@
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = UsbRoleCfg
+  FILE_GUID                      = 8b1f4d62-3c07-4a5e-9f24-6d1c8e5b0a73
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = UefiMain
+
+[Sources]
+  UsbRoleCfg.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  Reboot2AndroidPkg/Reboot2AndroidPkg.dec
+
+[LibraryClasses]
+  UefiApplicationEntryPoint
+  UefiLib
+  UefiBootServicesTableLib
+  BaseLib
+  BaseMemoryLib
+  CompilerIntrinsicsLib
+  PrintLib
+  DebugLib
+  MemoryAllocationLib

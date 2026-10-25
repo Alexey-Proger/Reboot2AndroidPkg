@@ -26,3 +26,4 @@
   Reboot2AndroidPkg/Application/Reboot2Android/Reboot2Android.inf
   Reboot2AndroidPkg/Application/PStoreProbe/PStoreProbe.inf
   Reboot2AndroidPkg/Application/UsbKbdTest/UsbKbdTest.inf
+  Reboot2AndroidPkg/Application/UsbRoleCfg/UsbRoleCfg.inf
